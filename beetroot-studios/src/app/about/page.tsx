@@ -77,14 +77,14 @@ export default function About() {
                 <div className="space-y-4 text-gray-400">
                   <p>
                     What started as a small team in Istanbul in 2018 has grown into a global game studio. 
-                    Our first game "Epic Quest" achieved great success on both App Store and Google Play.
+                    Our first game &ldquo;Epic Quest&rdquo; achieved great success on both App Store and Google Play.
                   </p>
                   <p>
                     Currently, with over 180 talented employees, we reach millions of players worldwide. 
                     With our experience in the mobile gaming market, we raise the bar with each project.
                   </p>
                   <p>
-                    We're also conducting research and development in new areas like AR/VR technologies and blockchain gaming, 
+                    We&apos;re also conducting research and development in new areas like AR/VR technologies and blockchain gaming, 
                     aiming to shape the future of gaming experiences.
                   </p>
                 </div>

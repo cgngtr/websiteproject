@@ -13,7 +13,6 @@ interface Game {
 
 interface GameCardProps {
   game: Game;
-  index: number;
 }
 
 const Header = () => {
@@ -146,7 +145,7 @@ const Hero = () => {
   );
 };
 
-const GameCard = ({ game, index }: GameCardProps) => {
+const GameCard = ({ game }: GameCardProps) => {
   return (
     <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#641434]/40 to-black/60 backdrop-blur-sm border border-[#8B1F47]/10 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B1F47]/20 hover:border-[#8B1F47]/30">
       <div className="aspect-[16/9] relative overflow-hidden">
@@ -358,7 +357,7 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {games.map((game, index) => (
-                  <GameCard key={index} game={game} index={index} />
+                  <GameCard key={index} game={game} />
                 ))}
               </div>
             </div>
