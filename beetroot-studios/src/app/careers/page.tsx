@@ -1,6 +1,6 @@
 "use client";
 
-import Image from 'next/image';
+import React from 'react';
 import Navbar from '@/components/Navbar';
 
 const benefits = [
@@ -101,8 +101,7 @@ export default function Careers() {
               </span>
             </h1>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              We're always looking for talented individuals who are passionate about gaming and want to make a difference. 
-              Join us in creating innovative gaming experiences that millions of players enjoy worldwide.
+              We&apos;re always looking for talented individuals to join our team.
             </p>
           </div>
 

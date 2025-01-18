@@ -54,7 +54,7 @@ export default function About() {
               </span>
             </h1>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Since 2018, we've been developing innovative and high-quality mobile games. 
+              Since 2018, we&apos;ve been developing innovative and high-quality mobile games. 
               Our mission is to create unforgettable experiences for players and make our mark in the global gaming market.
             </p>
           </div>

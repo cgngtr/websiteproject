@@ -1,6 +1,6 @@
 "use client";
 
-import Image from 'next/image';
+import React from 'react';
 import Navbar from '@/components/Navbar';
 
 const contactOptions = [
@@ -52,11 +52,11 @@ export default function Contact() {
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               Contact Us
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#8B1F47] via-[#B82E63] to-[#D64B7F] mt-2 pb-2">
-                Let's Connect
+                Let&apos;s Connect
               </span>
             </h1>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Have questions or want to collaborate? We'd love to hear from you. 
+              Have questions or want to collaborate? We&apos;d love to hear from you. 
               Choose the most suitable contact option below or fill out our contact form.
             </p>
           </div>
