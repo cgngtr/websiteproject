@@ -13,7 +13,7 @@ const stats = [
 const values = [
   {
     title: "Player-Centric",
-    description: "We prioritize our players&apos; experience in every decision we make. We continuously gather feedback and improve our games accordingly."
+    description: "We prioritize our players' experience in every decision we make. We continuously gather feedback and improve our games accordingly."
   },
   {
     title: "Innovation",
@@ -77,7 +77,7 @@ export default function About() {
                 <div className="space-y-4 text-gray-400">
                   <p>
                     What started as a small team in Istanbul in 2018 has grown into a global game studio. 
-                    Our first game &quot;Epic Quest&quot; achieved great success on both App Store and Google Play.
+                    Our first game &ldquo;Epic Quest&rdquo; achieved great success on both App Store and Google Play.
                   </p>
                   <p>
                     Currently, with over 180 talented employees, we reach millions of players worldwide. 

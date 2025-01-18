@@ -155,7 +155,7 @@ export default function Contact() {
               {[
                 {
                   question: "How can I report a bug?",
-                  answer: "You can report bugs through our support portal or by selecting the &apos;Support&apos; option in our contact form above."
+                  answer: "You can report bugs through our support portal or by selecting the 'Support' option in our contact form above."
                 },
                 {
                   question: "Do you offer internship opportunities?",
@@ -163,11 +163,11 @@ export default function Contact() {
                 },
                 {
                   question: "How can I collaborate with Beetroot Studios?",
-                  answer: "For business collaborations, please select the &apos;Business&apos; option in our contact form or reach out via email."
+                  answer: "For business collaborations, please select the 'Business' option in our contact form or reach out via email."
                 },
                 {
                   question: "Where can I find your press kit?",
-                  answer: "Our press kit is available for download on our website&apos;s media section."
+                  answer: "Our press kit is available for download on our website's media section."
                 }
               ].map((faq, index) => (
                 <div key={index} className="p-6 rounded-xl bg-gradient-to-br from-[#641434]/40 to-black/60 backdrop-blur-sm border border-[#8B1F47]/10">
