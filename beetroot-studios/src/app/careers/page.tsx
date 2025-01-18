@@ -43,7 +43,7 @@ const positions = [
     location: "Istanbul, Turkey",
     type: "Full-time",
     experience: "5+ years",
-    description: "We're looking for an experienced game developer to join our core development team.",
+    description: "We&apos;re looking for an experienced game developer to join our core development team.",
     requirements: [
       "Strong experience with Unity or Unreal Engine",
       "Proficiency in C++ and C#",

@@ -338,31 +338,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="relative bg-black min-h-screen">
-        <div className="fixed inset-0 bg-gradient-to-b from-black via-[#641434]/20 to-black pointer-events-none"></div>
-        
-        <div className="relative z-10">
-          <Hero />
-          
-          <section className="py-32">
-            <div className="container mx-auto px-4">
-              <div className="flex flex-col items-center mb-16 space-y-6 p-8 rounded-xl bg-black/40 backdrop-blur-sm border border-[#8B1F47]/10">
-                <h2 className="text-5xl font-bold text-white">
-                  Featured <span className="text-[#8B1F47]">Games</span>
-                </h2>
-                <p className="text-gray-400 text-lg text-center max-w-2xl">
-                  Discover our latest and most popular mobile games that millions of players enjoy worldwide.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {games.map((game, index) => (
-                  <GameCard key={index} game={game} />
-                ))}
-              </div>
-            </div>
-          </section>
-        </div>
+      <main>
+        <Hero />
+        <AboutSection />
+        <ContactSection />
       </main>
     </>
   );
