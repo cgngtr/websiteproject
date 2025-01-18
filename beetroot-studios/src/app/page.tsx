@@ -5,6 +5,17 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 
+interface Game {
+  title: string;
+  description: string;
+  image: string;
+}
+
+interface GameCardProps {
+  game: Game;
+  index: number;
+}
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -135,17 +146,23 @@ const Hero = () => {
   );
 };
 
-const GameCard = ({ game, index }) => {
+const GameCard = ({ game, index }: GameCardProps) => {
   return (
     <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#641434]/40 to-black/60 backdrop-blur-sm border border-[#8B1F47]/10 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B1F47]/20 hover:border-[#8B1F47]/30">
-      <div className="aspect-[16/9] relative">
-        <Image
-          src={game.image}
-          alt={game.title}
-          fill
-          className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#641434] via-[#641434]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="aspect-[16/9] relative overflow-hidden">
+        <div className="relative w-full h-full transform-gpu">
+          <Image
+            src={game.image}
+            alt={game.title}
+            fill
+            className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
+            style={{ transformOrigin: 'center center' }}
+          />
+          <div 
+            className="absolute inset-0 bg-gradient-to-t from-[#641434] via-[#641434]/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:scale-110"
+            style={{ transformOrigin: 'center center' }}
+          />
+        </div>
       </div>
       <div className="p-8 transform transition-all duration-500 relative">
         <div className="absolute inset-0 bg-gradient-to-t from-[#641434]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
